@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+:root {
+    --color-main: #E31C58;
+    --color-secondary: #490217;
+    --color-dark: #1d1d1d;
+    --white: #fff;
+    --dark: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Mobile First */
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 0 1.5rem;  
+    background-color: var(--color-main);
+    background: linear-gradient(to bottom right, var(--color-main) 0%, var(--color-secondary) 100%);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+input {
+    height: 3rem;
+    width: 100%;
+    border: none;
+    padding: 0 2rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+i {
+    font-size: 2rem;
+    color: var(--color-main);
+}
+
+/* Defaults */
+
+.container {
+    padding: 2rem 0;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.mb1 {
+    margin-bottom: 1rem;
+}
+
+.mb2 {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: var(--white);
+    height: 3rem;
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-main);
+    font-weight: bold;
+}
+
+/* Hero Section */
+
+.banner {
+    color: var(--white);
+}
+
+.banner .container .hero {
+    max-width: 100%;
+}
+
+.banner .hero .hero-title p {
+    font-size: 1.5rem;
+}
+
+.banner .hero .hero-image {
+    display: none;
+}
+
+/* Discover */
+
+.discover {
+    background: var(--white);
+    color: var(--dark);
+}
+
+.discover .benefits .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.discover .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover .cards .card .card-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.discover .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Signup */
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+/* Help */
+
+.help {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    z-index: 999;
+}
+
+.help i {
+    font-size: 5rem;
+    color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 0 3rem;
+    } 
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding: 4rem 0;
+        height: 100%;
+    }
+
+    /* Hero Section */
+
+    .banner {
+        height: 80vh;
+    }
+
+    .banner .hero {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
+    .banner .hero .hero-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3rem;
+    }
+
+    .banner .hero .hero-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* Discover */
+
+    .discover .benefits .title {
+        font-size: 2rem;
+    }
+
+    .discover .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .discover .cards .card {
+        height: 100%;
+    }
+
+    .signup .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    section {
+        padding: 0 10rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Sucess */
+
+.success {
+    font-size: 2rem;
+}
